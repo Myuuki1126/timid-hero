@@ -3,10 +3,10 @@ var res = {
   img_coin : "Resources/slime.png",
   img_enemy : "Resources/dokuro3.png",
   img_snake : "Resources/yusha3.png",
-  se_hitwall : "Resources/hitWall.mp3",
-  se_getPoint : "Resources/getPoint.mp3",
-  se_dead : "Resources/dead.mp3",
-  se_changeDir : "Resources/changeDirection.mp3"
+  se_hitwall : "Resources/hiWall.mp3",
+  se_getPoint : "Resources/gePoint.mp3",
+  se_dead : "Resources/dea.mp3",
+  se_changeDir : "Resources/changeirection.mp3"
 }
 
 window.onload = function(){
