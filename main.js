@@ -45,7 +45,7 @@ window.onload = function(){
                     this.addChild(sprite, 0);
                     this._snake = sprite;
 
-                    var label = cc.LabelTTF.create("Score: 0", "Arial", 40);
+                    var label = cc.LabelTTF.create("Score: 0", "DotGothic16", 40);
                     label.setPosition(80, size.height - 30);
                     label.setColor(cc.color("#0000ff"));
                     this.addChild(label, 1);
@@ -159,11 +159,11 @@ window.onload = function(){
                 gameOver: function(){
                   cc.audioEngine.playEffect(res.se_dead);
                   var size = cc.director.getWinSize();
-                  var label = cc.LabelTTF.create("GameOver\nScore is : " + this._score, "Arial", 40);
+                  var label = cc.LabelTTF.create("GameOver\nScore is : " + this._score, "DotGothic16", 60);
                   label.setPosition(size.width/2, size.height/2);
                   label.setColor(cc.color("#ff0000"));
                   this.addChild(label, 1);
-                  var button = new cc.MenuItemFont("Restart",this.restartGame,this);
+                  var button = new cc.MenuItemFont("Restart",this.restartGame,this, "DotGothic16", 50);
                   button.setPosition(size.width/2, size.height/2 - 200);
                   button.setColor(cc.color("#000000"));
                   var menu = new cc.Menu(button);
