@@ -1,5 +1,4 @@
 var res = {
-  img_bg : "Resources/bg.png",
   img_coin : "Resources/slime.png",
   img_enemy : "Resources/dokuro3.png",
   img_snake : "Resources/yusha3.png",
@@ -16,7 +15,6 @@ window.onload = function(){
         cc.view.resizeWithBrowserSize(true);
         //load resources
         var preload_res = [
-          res.img_bg,
           res.img_coin,
           res.img_enemy,
           res.img_snake,
