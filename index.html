@@ -7,12 +7,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+<style>
+    /* 画面全体を埋めるように設定 */
+    body {
+        margin: 0;
+        height: 100vh;
+        background-size: contain;  /* 背景画像のサイズを変更せず、画面に収める */
+        background-position: center;  /* 背景画像を中央に配置 */
+        background-repeat: no-repeat;  /* 画像が繰り返されないようにする */
+    }
+</style>
+
 </head>
 <body>
     
     <script type="text/javascript" src="cocos2d-js-v3.10-lite.js" charset="UTF-8"></script>
-    <canvas id="gameCanvas" width="640" height="1136"></canvas>
+    <canvas id="gameCanvas" width="640" height="1280"></canvas>
     <script type="text/javascript" src="main.js"></script>
-    <audio autoplay controls loop src="Resources/pikopiko.mp3"></audio>
+    
+    <script>
+        // Resourcesフォルダ内の画像ファイル名を配列で定義
+        const images = [
+            'Resources/bg1.png', 'Resources/bg2.png', 'Resources/bg3.png', 'Resources/bg4.png',
+            'Resources/bg5.png', 'Resources/bg6.png', 'Resources/bg7.png', 'Resources/bg8.png'
+        ];
+    
+        // ページロード時にランダムな画像を選択して背景画像に設定
+        window.addEventListener('load', function() {
+            // ランダムに1つの画像を選択
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+    
+            // 背景画像として設定
+            document.body.style.backgroundImage = `url(${randomImage})`;
+        });
+    </script>
+
+
+
 </body>
 </html>

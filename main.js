@@ -12,7 +12,7 @@ var res = {
 window.onload = function(){
     cc.game.onStart = function(){
         cc.view.adjustViewPort(true);
-        cc.view.setDesignResolutionSize(640, 1136, cc.ResolutionPolicy.SHOW_ALL);
+        cc.view.setDesignResolutionSize(640, 1280, cc.ResolutionPolicy.SHOW_ALL);
         cc.view.resizeWithBrowserSize(true);
         //load resources
         var preload_res = [
